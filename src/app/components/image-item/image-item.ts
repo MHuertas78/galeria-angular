@@ -1,0 +1,1 @@
+import { Component, Input } from '@angular/core'; import { CommonModule } from '@angular/common'; @Component({ selector: 'app-image-item', standalone: true, imports: [CommonModule], templateUrl: './image-item.html', styleUrl: './image-item.css' }) export class ImageItem { @Input() url = ''; @Input() alt = ''; zoomed = false; toggleZoom(): void { this.zoomed = !this.zoomed; } }

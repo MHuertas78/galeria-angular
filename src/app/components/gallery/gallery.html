@@ -1,0 +1,12 @@
+<main class="gallery-page">
+  <h1>Mi galería de imágenes</h1>
+  <p class="subtitle">Haz clic en cualquier imagen para ampliarla</p>
+
+  <div class="gallery-grid">
+    <app-image-item
+      *ngFor="let img of images"
+      [url]="img.url"
+      [alt]="img.alt">
+    </app-image-item>
+  </div>
+</main>

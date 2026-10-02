@@ -1,0 +1,1 @@
+<div class="image-card" (click)="toggleZoom()"> <img [src]="url" [alt]="alt" loading="lazy" /> </div> <div class="overlay" *ngIf="zoomed" (click)="toggleZoom()"> <img [src]="url" [alt]="alt" class="overlay-img" /> </div>
